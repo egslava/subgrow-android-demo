@@ -1,0 +1,48 @@
+name: "run-tests-on-pr"
+
+on:
+  pull_request
+
+jobs:
+  pre-release:
+    name: "Pre Release"
+    runs-on: "ubuntu-latest"
+
+    steps:
+      - name: "checkout"
+        uses: actions/checkout@v3
+
+      - name: "build"
+        run: |
+          chmod +x ./.github/workflows/scripts/build_release.sh
+          ./.github/workflows/scripts/build_release.sh
+        env:
+          ANDROID_PUBLISHER_CREDENTIALS: ${{ secrets.ANDROID_PUBLISHER_CREDENTIALS }}
+          BOGUNOV_EGSLAVA_DEMO_KEY_PASSWORD: ${{ secrets.BOGUNOV_EGSLAVA_DEMO_KEY_PASSWORD }}
+          BOGUNOV_EGSLAVA_DEMO_STORE_PASSWORD: ${{ secrets.BOGUNOV_EGSLAVA_DEMO_STORE_PASSWORD }}
+          BOGUNOV_EGSLAVA_DEMO_STORE_BASE64: ${{ secrets.BOGUNOV_EGSLAVA_DEMO_STORE_BASE64 }}
+          BOGUNOV_EGSLAVA_DEMO_KEY_ALIAS: ${{ secrets.BOGUNOV_EGSLAVA_DEMO_KEY_ALIAS }}
+
+      - name: "github-releases"
+        uses: marvinpinto/action-automatic-releases@latest
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "v0.0.${{github.run_number}}"
+          prerelease: true
+          title: "Development Build"
+          files: |
+            ./app/build/outputs/bundle/release/app-release.aab
+            ./app/build/outputs/apk/release/app-release.apk
+            ./app/build/outputs/apk/debug/app-debug.apk
+
+
+      - name: "publish to PlayStore"
+        run: |
+          chmod +x ./.github/workflows/scripts/build_publish.sh
+          ./.github/workflows/scripts/build_publish.sh
+        env:
+          ANDROID_PUBLISHER_CREDENTIALS: ${{ secrets.ANDROID_PUBLISHER_CREDENTIALS }}
+          BOGUNOV_EGSLAVA_DEMO_KEY_PASSWORD: ${{ secrets.BOGUNOV_EGSLAVA_DEMO_KEY_PASSWORD }}
+          BOGUNOV_EGSLAVA_DEMO_STORE_PASSWORD: ${{ secrets.BOGUNOV_EGSLAVA_DEMO_STORE_PASSWORD }}
+          BOGUNOV_EGSLAVA_DEMO_STORE_BASE64: ${{ secrets.BOGUNOV_EGSLAVA_DEMO_STORE_BASE64 }}
+          BOGUNOV_EGSLAVA_DEMO_KEY_ALIAS: ${{ secrets.BOGUNOV_EGSLAVA_DEMO_KEY_ALIAS }}

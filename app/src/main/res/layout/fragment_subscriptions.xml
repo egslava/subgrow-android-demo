@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_24"
+            tools:context="jp.subgrow.android.demo.platform.ui.subscriptions.SubscriptionsFragment"
+            >
+
+            <!-- Test your subscription -->
+            <TextView
+                android:id="@+id/test_your_s"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8"
+                android:gravity="top"
+                android:text="@string/screen_home_title"
+                android:textAppearance="@style/test_your_subscription"
+                android:textFontWeight="@integer/bold"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_crash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_24"
+                android:gravity="top"
+                android:text="Нажмите сюда, чтобы уронить приложение (и отправить баг-репорт)"
+                android:textAppearance="@style/these_are_t" />
+
+            <!-- These are test subscriptions. You won’t be charged any money. -->
+            <TextView
+                android:id="@+id/these_are_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_24"
+                android:gravity="top"
+                android:text="@string/these_are_t"
+                android:textAppearance="@style/these_are_t" />
+
+
+            <!--            android:layout_weight="1"-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list"
+                android:name="ru.egslava.subgrowandroiddemo.SubscriptionsFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="LinearLayoutManager"
+                tools:context="jp.subgrow.android.demo.platform.ui.subscriptions.SubscriptionsFragment"
+                tools:listitem="@layout/fragment_subscriptions_item" />
+
+            <!-- Your UID: 4773-4545-HhDN-8485 -->
+            <TextView
+                android:id="@+id/user_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_48"
+                android:alpha="0.7"
+                android:gravity="center_horizontal|top"
+                android:text="@string/user_id"
+                android:textAppearance="@style/your_uid_47" />
+
+            <!-- (c) Bogunov inc. -->
+            <TextView
+                android:id="@+id/c_bogunov_i"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:gravity="center_horizontal|top"
+                android:text="@string/c_bogunov_i"
+                android:textAppearance="@style/c_bogunov_i" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

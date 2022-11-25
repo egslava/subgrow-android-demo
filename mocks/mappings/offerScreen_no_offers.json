@@ -1,0 +1,15 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/api/offer/screen"
+  },
+  "response": {
+    "status": 500,
+    "jsonBody": {
+      "error": "no-screens"
+    },
+    "headers": {
+      "Content-Type": "text/plain"
+    }
+  }
+}

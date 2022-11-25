@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:ambientShadowAlpha="1"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:elevation="@dimen/_48"
+    android:orientation="vertical"
+    android:outlineAmbientShadowColor="@color/white"
+    android:outlineSpotShadowColor="#FF00FF00"
+    app:cardCornerRadius="@dimen/item_radius"
+    app:cardElevation="10dp"
+    android:shadowRadius="100"
+    android:shadowColor="#F0F"
+    tools:context="jp.subgrow.android.demo.platform.ui.subscriptions.SubscriptionsFragment"
+
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16">
+
+        <TextView
+            android:id="@+id/subscription_item_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16"
+            android:textColor="@color/black"
+            android:textFontWeight="@integer/bold"
+            android:textSize="@dimen/_21sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/subscription_item_btn"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/onemonth" />
+
+        <ImageView
+            android:id="@+id/subscription_item_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2"
+            android:src="@drawable/ic_hourglass"
+            app:layout_constraintBottom_toBottomOf="@id/subscription_item_duration"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@id/subscription_item_duration"
+            tools:ignore="ContentDescription"
+            tools:text="Will last 5 mins" />
+
+        <TextView
+            android:id="@+id/subscription_item_duration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4"
+            android:layout_marginEnd="@dimen/_16"
+            android:gravity="start|top"
+            android:textColor="@color/subscription_duration"
+            android:textFontWeight="500"
+            android:textSize="@dimen/_16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/subscription_item_icon"
+            app:layout_constraintRight_toLeftOf="@id/subscription_item_btn"
+            app:layout_constraintTop_toBottomOf="@id/subscription_item_title"
+            tools:text="Will last 5 mins" />
+
+        <Button
+            android:id="@+id/subscription_item_btn"
+            android:layout_width="@dimen/btn_subscribe_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:text="@string/start"
+            android:textAllCaps="false"
+            android:textAppearance="@style/start"
+            app:backgroundTint="@color/btn"
+            app:cornerRadius="@dimen/btn_radius"
+            android:textColor="@color/white_selector"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
+
+
+
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="jp.subgrow.android.demo.platform.ui.subscriptions.SubscriptionsFragment"
+        android:label="@string/title_subscriptions"
+        tools:layout="@layout/fragment_subscriptions" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_offer"
+            app:destination="@id/navigation_offer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="jp.subgrow.android.demo.platform.ui.personalcode.PersonalCodeFragment"
+        android:label="@string/title_code"
+        tools:layout="@layout/fragment_personalcode" />
+
+    <fragment
+        android:id="@+id/navigation_offer"
+        android:name="jp.subgrow.android.sdk.platform.ui.debug_ui.debug_ui.OfferFragment"
+        android:label="@string/title_offer"
+        tools:layout="@layout/fragment_offer">
+        <argument
+            android:name="offer_arg_1"
+            app:argType="jp.subgrow.android.sdk.platform.ui.offer.OfferParams"
+            />
+    </fragment>
+</navigation>

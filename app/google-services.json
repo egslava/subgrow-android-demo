@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "244140342476",
+    "project_id": "ru-egslava-subgrowandroiddemo",
+    "storage_bucket": "ru-egslava-subgrowandroiddemo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244140342476:android:9965c664ebc507529e1669",
+        "android_client_info": {
+          "package_name": "ru.egslava.subgrowandroiddemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "244140342476-lecqd7o67altoooldd5im1ur7gej3sql.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ru.egslava.subgrowandroiddemo",
+            "certificate_hash": "b7b225ebdcdc27e248f3e1e50c14c32575abf97c"
+          }
+        },
+        {
+          "client_id": "244140342476-gfblntnvkd7khlmrlqocf24t5gknsmu2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkbxrrqIrwCuLkw6G-c98SzC8Pk76YHOM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "244140342476-gfblntnvkd7khlmrlqocf24t5gknsmu2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

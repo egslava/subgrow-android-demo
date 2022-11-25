@@ -1,0 +1,19 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="_2">2dp</dimen>
+    <dimen name="_4">4dp</dimen>
+    <dimen name="_8">8dp</dimen>
+    <dimen name="_16">16dp</dimen>
+    <dimen name="_16sp">16sp</dimen>
+    <dimen name="_24">24dp</dimen>
+    <dimen name="_48">48dp</dimen>
+    <dimen name="_21sp">21sp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="btn_subscribe_width">131dp</dimen>
+<!--    <dimen name="btn_subscribe_width">91dp</dimen>-->
+    <dimen name="btn_radius">4dp</dimen>
+    <dimen name="item_radius">12dp</dimen>
+    <dimen name="bold">700</dimen>
+</resources>

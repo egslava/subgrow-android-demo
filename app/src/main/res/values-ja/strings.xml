@@ -1,0 +1,8 @@
+﻿<resources>
+    <string name="screen_home_title">あなたのサブスクリプションをテスト</string>
+    <string name="these_are_t">こちらはサブスクリプションのテストになります。費用は無料です。</string>
+    <string name="offer_image_description">
+        プロモーション画像
+    </string>
+    <string name="resubscribe">再購読</string>
+</resources>

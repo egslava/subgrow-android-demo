@@ -1,0 +1,44 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/api/offer/screen/android"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "productId": "com.b2s.subscription.oneMonth",
+      "promotionOfferId": "com.b2s.subscription.onemonth.50off",
+      "pushNotificationText": "あなただけの特別割引です！期間限定でサブスクリプション価格がお安くなります。",
+      "screen": {
+        "backgroundColor": "#d5d9e1",
+        "backgroundImage": null,
+        "image": {
+          "base64": "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAC4jAAAuIwF4pT92AAAE1ElEQVQ4jWWUe2xTVRjAv7sqJBgTQ4LEDdQIxohi0OAjY21vWycBDGEJM0MeKjgSBAcTZWMbjGzTDdjAAEOxvbUgr2UygWywsfbcrt0Gg7mHD0AMcbvdYA96elvKkLY7n957yyv88eXcc5Pvd37nfOd8AADAEwomkaojT2gCL9KE+PcjYW4YgsyMI48VJOZD/tSiGQVTS8zZkAN7+x2wubhUgxkJhTlNaoJOTdTgiTyh6Tyhm3lCt/OEbuEJ/VBfe/2FDwo9cHrh7nEbJhV2Zk3LySjdv+uTkrIds8ut+0CFGVwUTIqZZjGFJ9TBEyrzhKJJDNwPQjHVHfiXPxe2rppYIG56vqih9fKvy4tzy6uLKypKvtn5bTLoXf4HYYt5QsO8SJEnKiRmEgNRI6GRFBeNml3+2KskiHNLzuLhzMMoXwsNybdCmM3n4UrD2trt1sp1YPQEdfpzt4B3+VfcNeIJjZjEADMQykwiZanuAFvXGWJ6p5+NO+Bj5K9AFBFjiIi3R+7ENlq24JKXVl6scHyXC4aWm2BoDSerMC1iZg3M5nkC7KO2IG7oDGF+VxDT20LsyIDCQtZ3eRBPF9aNbpuxFdck5QytX5q/p6xyVyHkwRKw1F5v4d0y8k1y1OyR0eQNslfqhlnWBRnXtAdxZ08EjwcRJZ+Mf9ZfxJ+WH8LC5wrZqjd2jGZsJDi3duCPXG/T5K1FxVNB3xV7L/N9Gy5dKMT45hBLrpLYgop2lnP5Nv44zNATZHjpt2tYl3cS675uQO8uN66eVoYvb2zBSTWDbHKDHH2t/ga+fSawKK26A8DQHKpcPduKa8d+Gl00axvu3tPC+gbDGBkOYZfjLB5J+wFzkzZhXTnBcF8Ay9LsOL6oA6FqmIG1F2FfTxRsEo5xSDVwQAYwtN/2pH/RiAWJG2KukhPsak0HHss+hnmG3Zhp3IupGdVY7+lVzg23LxDwqa9aEY4Ooc7agwl2iXF2X4yz+xAE6RJYe8fCO6LcnX5mEGtO/x3L/76DzV/vRMuOTpx9vA+nN/px8z9qEbBy2UEcv74ZoWoIExQzuw85QQFKowqQE6R+EKSJsLA50FV+ZQTnt4VjM4nMjOdH0NIWxpnum7iiWy0oHsz6Gcdne5Vtou4+TAWCoAFBkHwgSBNgnifgtIgUUxr9MQuhzOIcxlnuEUx3SkhdAp78bC9OWNcS3+ZDMOQEH+MEKQaC+q97jO0SBykuWmokFM1iIGomftSLIWY6cQV/z5qO9W++hc987nkYFgeCZoec3RcFuzp3gCCB8uxmmkTlIlPGu/wspe0O8zYeZq2LP8akL88jVN1Ana0HVYsHYJzdpwCZUhQVLEhz7wKVN1xtFikmO2lk56mr2FTawF7M62RwaAB1tl4VBo/ClAUicZgX7D6AugvxXnhm+FmjW/annhrAZcVNEX15O+oO9SNn61WqqES8opqVBpOi8WJEObv0OtgkAEFK0HqgS7WcZSR0RN8aRsPZcOSJ/b5R5cIqEBUmaFZxw0j83JRYwCl2gqRTofG2pTVWQmfwTn/3u4TihKPXEKxqspaoWKqG8bkgXeUEyaiemwLTRgCLKINJDNyDPl3V//gcr7x2yi+DvfcM7co27xkOgCBt0tmlJzl7HObwAafY/R//AeO0262LK5dMAAAAAElFTkSuQmCC",
+          "url": "https://app.subgrow.net/api/offer/image/968d921a-114c-4d2d-9180-3fffa2a8d472"
+        },
+        "title": {
+          "text": "本日限り！翌月に通常価格の半額でサービスをお使いいただけるチャンスです。",
+          "color": "#000000"
+        },
+        "subtitle": {
+          "text": "",
+          "color": "#000000"
+        },
+        "offer": {
+          "text": "次の 1 か月の月額 ¥50（50％を節約）。次に、¥100 /月。",
+          "color": "#000000"
+        },
+        "promotion_button": {
+          "text": "再購読",
+          "text_color": "#ffffff",
+          "background_color": "#3f51b5"
+        },
+        "lang": "ja",
+        "footer": "<style> p {text-align: center;} a {color: rgb(251, 161, 43); text-decoration: none;}</style><body><p><a href='https://backtosub.jp/tos_ja/' target='_blank''>利用規約</a> · <a href='https://backtosub.jp/privacy_ja/' target='_blank''>プライバシーに関する方針</a></p></body>"
+      }
+    },
+    "headers": {
+      "Content-Type": "text/plain"
+    }
+  }
+}

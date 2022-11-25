@@ -1,0 +1,29 @@
+﻿<resources>
+    <string name="app_name">Subgrow Android Demo</string>
+    <string name="title_subscriptions" translatable="false">Subscriptions</string>
+    <string name="title_code" translatable="false">Personal code</string>
+    <string name="title_debug_ui" translatable="false">Debug UI
+    </string>
+    <string name="title_offer" translatable="false">
+        Offer
+    </string>
+
+    <!--    <string name="screen_home_title">Test your subscription</string>-->
+    <string name="screen_home_title">Test your subscription</string>
+    <string name="these_are_t">These are test subscriptions. You won’t be charged any money.</string>
+    <string name="user_id"
+        translatable="false">Your UID: %1$s</string>
+    <string name="c_bogunov_i" translatable="false">(c) Bogunov inc.</string>
+    <string name="start" translatable="false">Start</string>
+
+    <!--    <string name="free_trial" translatable="false">Free trial</string>-->
+    <string name="onemonth" translatable="false">One month</string>
+    <string name="threemonth" translatable="false">3 months</string>
+    <string name="sixmonth" translatable="false">6 months</string>
+    <string name="oneyear" translatable="false">One year</string>
+    <string name="offer_image_description">
+        Promotional image
+    </string>
+    <string name="resubscribe">Resubscribe</string>
+
+</resources>
